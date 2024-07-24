@@ -28,3 +28,4 @@ Bu çalışma aynı zamanda, işletmenin operasyonel süreçlerini iyileştirmek
 - received_by: gender of the person handling the transaction.
 - time_of_sale: different times of the day (Morning, Evening, Afternoon, Night, Midnight).
 
+![image](https://github.com/user-attachments/assets/56976bfe-2479-4c21-9254-0b815dc15bc2)
