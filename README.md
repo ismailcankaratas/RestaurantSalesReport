@@ -1,31 +1,33 @@
 # Restaurant Sales Report
 
-Hangi zaman da hangi yemek daha çok satılıyor.
-satışlar sabah mı akşam mı
-nakit mi kredi kartı mı
-
-1. Satış miktarı tahmin etme. (Quantity)
-
 # Amaç
-Amacımız, veri kümemizde bulunan çeşitli bilgileri kullanarak "quantity" (miktar) sütunundaki değerleri tahmin etmek için bir yöntem geliştirmektir. Bu tahminleme süreci, sipariş tarihi, ürün adı, ürün tipi, fiyatı, işlem tipi gibi diğer sütunlardaki verilerin analizine dayanacaktır.
+Bu çalışmanın amacı, bir restorana ait satış verilerini kullanarak, ürünlerin gelecekteki aylık satışlarını tahmin eden bir model geliştirmektir. Restoran işletmeleri için doğru ve güvenilir satış tahminleri, stok yönetimi, maliyet kontrolü ve pazarlama stratejilerinin etkin bir şekilde planlanmasına yardımcı olur. 
 
-Öncelikle, makine öğrenimi modeli oluşturarak ve bu modeli eğiterek geçmiş verilerden öğrenmeyi planlıyoruz. Bu model, geçmiş alışveriş verilerinden elde ettiği bilgilerle yeni siparişlerin "quantity" değerlerini tahmin etme yeteneğine sahip olacak şekilde tasarlanacaktır.
+Oluşturulacak modelin aşağıdaki hedeflere ulaşması amaçlanmaktadır:
 
-Ayrıca, elde edilen modeli kullanarak, müşteri profillerini anlamak ve yeni müşteri siparişlerinin olası miktarlarını tahmin etmek istiyoruz. Örneğin, geçmiş alışveriş alışkanlıklarına dayanarak, belirli müşteri gruplarının muhtemel sipariş miktarlarını tahmin edebiliriz.
+- **Satış Eğilimlerinin Analizi:** Geçmiş satış verilerini kullanarak, ürünlerin zaman içerisindeki satış eğilimlerini belirlemek ve bu eğilimler doğrultusunda gelecekteki satışları tahmin etmek.
 
-Bu çalışma aynı zamanda, işletmenin operasyonel süreçlerini iyileştirmek ve müşteri memnuniyetini artırmak için değerli içgörüler sunmayı hedeflemektedir. Veri analizi ve makine öğrenimi tekniklerini kullanarak, veri kümemizdeki bilgileri derinlemesine inceleyerek işletme performansını optimize etmeyi ve müşteri hizmetlerini iyileştirmeyi amaçlıyoruz.
+- **Stok Yönetimi Optimizasyonu:** Satış tahminleri doğrultusunda, stok seviyelerinin daha verimli yönetilmesini sağlayarak, ürünlerin stokta tükenmesini veya israfını önlemek.
+
+- **Maliyetlerin Azaltılması:** Doğru satış tahminleri ile gereksiz maliyetlerin önüne geçmek ve restoranın kârlılığını artırmak.
+
+- **Pazarlama ve Promosyon Stratejilerinin Belirlenmesi:** Ürünlerin satış performansına göre, belirli dönemlerde yapılacak pazarlama ve promosyon kampanyalarının zamanlamasını ve içeriğini optimize etmek.
+
 
 ## Sütunlar
 
-- order_id: a unique identifier for each order.
-- date: date of the transaction.
-- item_name: name of the food.
-- item_type: category of item (Fastfood or Beverages).
-- item_price: price of the item for 1 quantity.
-- Quantity: how much quantity the customer orders.
-- transaction_amount: the total amount paid by customers.
-- transaction_type: payment method (cash, online, others).
-- received_by: gender of the person handling the transaction.
-- time_of_sale: different times of the day (Morning, Evening, Afternoon, Night, Midnight).
+- **order_id**: Her sipariş için benzersiz bir tanımlayıcı.
+- **date**: İşlemin gerçekleştiği tarih.
+- **item_name**: Yiyeceğin adı.
+- **item_type**: Ürünün kategorisi (Fastfood veya İçecekler).
+- **item_price**: Ürünün 1 adetinin fiyatı.
+- **Quantity**: Müşterinin sipariş ettiği miktar.
+- **transaction_amount**: Müşterinin ödediği toplam tutar.
+- **transaction_type**: Ödeme yöntemi (nakit, online, diğerleri).
+- **received_by**: İşlemi gerçekleştiren kişinin cinsiyeti.
+- **time_of_sale**: Günün farklı saatleri (Sabah, Akşam, Öğleden Sonra, Gece, Gece Yarısı).
+
+## Dataset
+[Kaggle](https://www.kaggle.com/datasets/rajatsurana979/fast-food-sales-report)
 
 ![image](https://github.com/user-attachments/assets/56976bfe-2479-4c21-9254-0b815dc15bc2)
